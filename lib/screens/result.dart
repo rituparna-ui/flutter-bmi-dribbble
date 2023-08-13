@@ -50,12 +50,15 @@ class ResultScreen extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Text(
-                          calculation.getResult().toUpperCase(),
-                          style: TextStyle(
-                            color: resultColor,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
+                        Padding(
+                          padding: const EdgeInsets.only(top: 16),
+                          child: Text(
+                            calculation.getResult().toUpperCase(),
+                            style: TextStyle(
+                              color: resultColor,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                         Text(
